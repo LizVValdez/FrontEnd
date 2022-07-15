@@ -1,0 +1,39 @@
+img{
+    float: left;
+    margin-top: -5em;
+}
+
+#boton_editar{
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin-right: 60%;
+    margin-top: 3px;
+    float: right;    
+    background: url('src/assets/img/lapiz1.png') no-repeat;
+}
+
+#perfil{
+    width: 19%;
+    margin-top: -4%;
+    margin-left: 2%;
+    float: left;
+}
+#info-actions{
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+.acerca_de{
+    margin-top: 20%;
+}
+.acerca_de h1{
+    margin-left: 4%;
+    margin-top: 1%;
+}
+.items-list{
+    list-style: none;
+}
+#imagen_ayuda_acercade{
+    margin-left: 30%;
+    margin-top: -1.3em;
+}

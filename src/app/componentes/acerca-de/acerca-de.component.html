@@ -1,0 +1,46 @@
+<br>
+<br>
+<div id="container" class="acerca_de">
+<div *ngFor="let dato of Datos">       
+    <ul> 
+        <li><h3><img src="{{dato.url_perfil}}"></h3></li>
+        <button *ngIf="isAdmin" (click)="abrirModal(dato)" 
+        type="button" id="boton_editar"></button>
+        <li><h3>{{dato.nombre}}</h3></li>
+        <li><h3>{{dato.titulo}}</h3></li>
+        <li><h3>{{dato.acerca_de}}</h3></li>
+    </ul>
+</div>
+<br>
+    <!-- Modal para actualizar Datos-->
+    <div class="modal fade" id="editarPersonaModal" 
+    data-backdrop="static" 
+    data-keyboard="false" tabindex="-1" aria-labelledby="editarPersonaModal" 
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Editar Datos Personales</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form #editForm="ngForm">
+                <label for="nombre">Nombre</label><br>
+                <input ngModel="{{editPersona?.nombre}}" type="text" name="nombre" class="form-control">
+                  <label for="titulo">Titulo</label><br>
+                  <input ngModel="{{editPersona?.titulo}}" type="text" name="titulo"  class="form-control">
+                  <label for="acerca_de">Acerca De</label><br>
+                  <input ngModel="{{editPersona?.acerca_de}}" type="text" name="acerca_de"  class="form-control">
+                  <label for="url_perfil">URL Imagen de Perfil</label><br>
+                  <img id="imagen_ayuda_acercade" title ="La URL de una imagen puede obtenerse luego de alojar la imagen en un servicio online" src="\assets\img\ayuda.png"/>
+                <input ngModel="{{editPersona?.url_perfil}}" type="text" name="url_perfil"  class="form-control">
+                  <input type="hidden" name="id" ngModel="{{editPersona?.id}} ">
+                  <div class="modal-footer">
+                    <button (click)="actualizarDatos(editForm.value)" type="button" class="btn" data-dismiss="modal">Guardar cambios</button>
+                    <button id="update-acercaDe-modal" type="button" class="btn" data-dismiss="modal">Cancelar</button>
+                  </div>
+              </form>
+          </div>
+

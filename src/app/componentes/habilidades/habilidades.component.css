@@ -1,0 +1,17 @@
+h4{
+    margin-left: 0.5em;
+}
+.bar {
+    background: #1c4b2759;
+    display: flex;
+    height: 10px;
+    width: 60%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background:#868e00f2;
+}

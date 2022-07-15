@@ -1,0 +1,34 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+h2{
+    padding: 0.1em;
+    background-color: lightgray;
+    padding-left: 3%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+li{
+    list-style-type: none;
+}
+#boton_agregar{
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+    background: url('src/assets/img/anadir.png') no-repeat;
+}
+.cefli{
+    width: 14%;
+    float: left;
+    margin-right: 2%;
+}
+.botones_edicion{
+    border: none;
+    background: none;
+    padding: 2px;
+}
+.contenedor_botones{
+    margin-right: 39%;
+    margin-top: 0%;
+    float: right;
+}
