@@ -15,6 +15,7 @@
     <li><img src="{{experiencia.urlExperiencia}}"></li>
     <li><h3>{{experiencia.tituloExperiencia}}</h3></li>
     <li><h5>{{experiencia.institucionExperiencia}}</h5></li>
+    <li><h4>{{experiencia.descripcionExperiencia}}</h4></li>
     <li><h6>{{experiencia.tiempoExperiencia}}</h6></li>
     </ul>
 </div>
@@ -43,6 +44,8 @@ aria-hidden="true">
               <input ngModel type="text" name="institucionExperiencia"  class="form-control">
               <label for="tiempoExperiencia">Duración</label><br>
               <input ngModel type="text" name="tiempoExperiencia"  class="form-control">
+              <label for="descripcionExperiencia">Descripción</label><br>
+              <input ngModel type="text" name="descripcionExperiencia"  class="form-control">
               <label for="urlExperiencia">URL Imagen</label><br>
               <img id="imagen_ayuda_agregar_exp" title ="La URL de una imagen puede obtenerse luego de alojar la imagen en un servicio online" src="\assets\img\ayuda.png"/>
               <input ngModel type="text" name="urlExperiencia"  class="form-control">
@@ -78,6 +81,8 @@ data-keyboard="false" tabindex="-1" aria-labelledby="editarExperienciaModal" ari
               <input ngModel="{{editExperiencia?.institucionExperiencia}}" type="text" name="institucionExperiencia"  class="form-control">
               <label for="tiempoExperiencia">Duración</label><br>
               <input ngModel="{{editExperiencia?.tiempoExperiencia}}" type="text" name="tiempoExperiencia"  class="form-control">
+              <label for="descripcionExperiencia">Descripción</label><br>
+              <input ngModel type="text" name="descripcionExperiencia"  class="form-control">
               <label for="urlExperiencia">URL Imagen</label><br>
               <img id="imagen_ayuda_editar_exp" title ="La URL de una imagen puede obtenerse luego de alojar la imagen en un servicio online" src="\assets\img\ayuda.png"/>
               <input ngModel="{{editExperiencia?.urlExperiencia}}" type="text" name="urlExperiencia"  class="form-control">
